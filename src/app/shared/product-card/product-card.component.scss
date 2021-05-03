@@ -1,0 +1,10 @@
+.product-card { 
+    margin-top: 40px; 
+    border-radius: 5px; 
+    box-shadow: 0px 0px 5px silver; 
+    padding: 20px; 
+}
+
+.product-card:hover {
+    box-shadow: 0px 0px 5px green; 
+}

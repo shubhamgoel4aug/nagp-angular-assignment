@@ -1,0 +1,119 @@
+<app-header></app-header>
+<br>
+<div class="row" *ngIf="!OrderPlaced">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                {{ 'checkout.pre_checkout.pre' | translate }} <b>{{ 'checkout.pre_checkout.days' | translate }}</b>
+            </div>
+        </div>
+        <div class="row"><div class="col-md-12">&nbsp;</div></div>
+        <form novalidate (ngSubmit)="checkout()" [formGroup]="CheckOutForm">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="{{ 'checkout.form.placeholders.name' | translate }}" required
+                        formControlName="Name" [ngClass]="{
+                            'is-invalid':
+                              (CheckOutForm.get('Name')?.touched || CheckOutForm.get('Name')?.dirty) &&
+                              !CheckOutForm.get('Name')?.valid
+                          }" />
+                    <div class="form-error"
+                        *ngIf="CheckOutForm.get('Name')?.errors?.required && CheckOutForm.get('Name')?.touched">
+                        {{ 'checkout.form.validations.name.required' | translate }}
+                    </div>
+                    <div class="form-error" *ngIf="CheckOutForm.get('Name')?.errors?.minlength">
+                        {{ 'checkout.form.validations.name.length' | translate }}
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="{{ 'checkout.form.placeholders.shipping_address' | translate }}" required
+                        formControlName="ShippingAddress" [ngClass]="{
+                            'is-invalid':
+                              (CheckOutForm.get('ShippingAddress')?.touched || CheckOutForm.get('ShippingAddress')?.dirty) &&
+                              !CheckOutForm.get('ShippingAddress')?.valid
+                          }" />
+                    <div class="form-error"
+                        *ngIf="CheckOutForm.get('ShippingAddress')?.errors?.required && CheckOutForm.get('ShippingAddress')?.touched">
+                        {{ 'checkout.form.validations.shipping_address.required' | translate }}
+                    </div>
+                    <div class="form-error" *ngIf="CheckOutForm.get('ShippingAddress')?.errors?.minlength">
+                        {{ 'checkout.form.validations.shipping_address.length' | translate }}
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="number" class="form-control" placeholder="{{ 'checkout.form.placeholders.pincode' | translate }}"
+                        formControlName="PinCode" [ngClass]="{
+                            'is-invalid':
+                              (CheckOutForm.get('PinCode')?.touched || CheckOutForm.get('PinCode')?.dirty) &&
+                              !CheckOutForm.get('PinCode')?.valid
+                          }" />
+                    <div class="form-error"
+                        *ngIf="CheckOutForm.get('PinCode')?.errors?.required && CheckOutForm.get('PinCode')?.touched">
+                        {{ 'checkout.form.validations.pincode.required' | translate }}
+                    </div>
+                    <div class="form-error" *ngIf="CheckOutForm.get('PinCode')?.errors?.min">
+                        {{ 'checkout.form.validations.pincode.length' | translate }}
+                    </div>
+                    <div class="form-error" *ngIf="CheckOutForm.get('PinCode')?.errors?.max">
+                        {{ 'checkout.form.validations.pincode.length' | translate }}
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="number" class="form-control" placeholder="{{ 'checkout.form.placeholders.mobile_number' | translate }}" required
+                        formControlName="PhoneNumber" [ngClass]="{
+                            'is-invalid':
+                              (CheckOutForm.get('PhoneNumber')?.touched || CheckOutForm.get('PhoneNumber')?.dirty) &&
+                              !CheckOutForm.get('PhoneNumber')?.valid
+                          }" />
+                    <div class="form-error"
+                        *ngIf="CheckOutForm.get('PhoneNumber')?.errors?.required && CheckOutForm.get('PhoneNumber')?.touched">
+                        {{ 'checkout.form.validations.mobile_number.required' | translate }}
+                    </div>
+                    <div class="form-error" *ngIf="CheckOutForm.get('PhoneNumber')?.errors?.min">
+                        {{ 'checkout.form.validations.mobile_number.length' | translate }}
+                    </div>
+                    <div class="form-error" *ngIf="CheckOutForm.get('PhoneNumber')?.errors?.max">
+                        {{ 'checkout.form.validations.mobile_number.length' | translate }}
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="email" class="form-control" placeholder="{{ 'checkout.form.placeholders.email' | translate }}" required
+                        formControlName="Email" [ngClass]="{
+                            'is-invalid':
+                              (CheckOutForm.get('Email')?.touched || CheckOutForm.get('Email')?.dirty) &&
+                              !CheckOutForm.get('Email')?.valid
+                          }" />
+                    <div class="form-error"
+                        *ngIf="CheckOutForm.get('Email')?.errors?.required && CheckOutForm.get('Email')?.touched">
+                        {{ 'checkout.form.validations.email.required' | translate }}
+                    </div>
+                    <div class="form-error" *ngIf="CheckOutForm.get('Email')?.errors?.email">
+                        {{ 'checkout.form.validations.email.pattern' | translate }}
+                    </div>
+                </div>
+                <div class="col-md-3 text-center"><b>{{ 'cart.total_cart_value' | translate }}</b> {{CartValue | currency: 'INR'}}</div>
+                <div class="col-md-3">
+                    <button class="btn btn-success" type="submit" style="width: 100%;" [disabled]="!CheckOutForm.valid || CartValue === 0">
+                        {{ 'cart.checkout' | translate }} </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+<div class="row" *ngIf="OrderPlaced">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 text-center">{{ 'checkout.post_checkout.pre' | translate }} <b>{{ 'checkout.post_checkout.days' | translate }}</b> <br> {{ 'checkout.post_checkout.contact' | translate }} 
+        <br> {{ 'checkout.post_checkout.continue' | translate }} <a href="products">{{ 'checkout.post_checkout.here' | translate }}</a>.
+    </div>
+    <div class="col-md-2"></div>
+</div>
+<br>
+<app-footer></app-footer>

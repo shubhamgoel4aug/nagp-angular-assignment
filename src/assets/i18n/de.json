@@ -1,0 +1,78 @@
+{
+    "header": {
+        "welcome": "Willkommen",
+        "products": "Prodúkte",
+        "login": "Ánmeldung"
+    },
+    "footer": {
+        "copyright": "Úrheberrecht",
+        "tagline": "Hier beginnt das Einkaufen"
+    },
+    "login": {
+        "username": "Nutzername",
+        "password": "Passwort",
+        "no_username": "Bitte geben Sie Ihren Benutzernamen ein.",
+        "no_password": "Bitte Passwort eingeben.",
+        "invalid_credentials": "Ungültige Anmeldeinformationen. Bitte versuchen Sie es erneut."
+    },
+    "products": {
+        "select_category": "Kategorie Wählen",
+        "category_electronics": "Elektronik",
+        "category_kitchen": "Küche",
+        "category_kids": "Kinder",
+        "search_placeholder": "Suchabfrage Eingeben",
+        "search_button": "Súche"
+    },
+    "cart": {
+        "product": "Prodúkt",
+        "quantity": "Ménge",
+        "price": "Preís",
+        "total_cart_value": "Gesamtwert des Warenkorbs",
+        "checkout": "Auschecken",
+        "clear_cart": "Warenkorb löschen" 
+    },
+    "checkout": {
+        "pre_checkout": {
+            "pre": "Bitte geben Sie die folgenden Details ein. Ihre Bestellung wird in geliefert",
+            "days": "7 bis 14 Werktage."
+        },
+        "post_checkout": {
+            "pre": "Ihre Bestellung wurde erfolgreich aufgegeben. Bitte warten Sie auf",
+            "days": "7 bis 14 Werktage.",
+            "contact": "Bei Fragen kontaktieren Sie uns bitte unter 1800 123 4567.",
+            "continue": "Sie können weiter einkaufen",
+            "here": "hier"
+        },
+        "form": {
+            "placeholders": {
+                "name": "Gib deinen Namen ein",
+                "shipping_address": "Geben Sie Ihre Lieferadresse ein",
+                "pincode": "Geben Sie Ihre Vorwahl ein",
+                "mobile_number": "Gib deine Handynummer ein",
+                "email": "Geben Sie Ihre E-Mail"
+            },
+            "validations": {
+                "name": {
+                    "required": "Bitte geben Sie Ihren Namen ein.",
+                    "length": "Name sollte mindestens 6 Zeichen lang sein."
+                },
+                "shipping_address": {
+                    "required": "Bitte geben Sie Ihre Lieferadresse ein.",
+                    "length": "Versand-Adresse sollte aus mindestens 10 Zeichen lang sein."
+                },
+                "pincode": {
+                    "required": "Bitte geben Sie Ihren Bereich Pin-Code.",
+                    "length": "Pin-Code soll von 6 Ziffern sein."
+                },
+                "mobile_number": {
+                    "required": "Bitte geben Sie Ihre Handynummer.",
+                    "length": "Mobile Number sollte 10 Ziffern lang sein."
+                },
+                "email": {
+                    "required": "Bitte geben Sie Ihre E-Mail.",
+                    "pattern": "Bitte geben Sie eine gültige E-Mail-ID ein."
+                }
+            }
+        }
+    }
+}

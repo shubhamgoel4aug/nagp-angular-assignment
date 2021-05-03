@@ -1,0 +1,50 @@
+<div class="card text-center login-box">
+    <div class="card-header">
+        Login <span class="fab fa-stripe-s" style="color: orangered;"></span>hop<span class="fas fa-tenge" style="color: orangered;"></span>rox 
+        <span class="fab fa-studiovinari"></span>
+    </div>
+    <div class="card-body">
+        <form novalidate (ngSubmit)="login()" [formGroup]="loginForm">
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="text" class="form-control" placeholder="{{ 'login.username' | translate }}" required
+                        formControlName="userName" [ngClass]="{
+                            'is-invalid':
+                              (loginForm.get('userName')?.touched || loginForm.get('userName')?.dirty) &&
+                              !loginForm.get('userName')?.valid
+                          }" />
+                </div>
+            </div>
+            <div class="form-error" *ngIf="loginForm.get('userName')?.errors?.required && loginForm.get('userName')?.touched">
+                {{ 'login.no_username' | translate }}
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="password" class="form-control" placeholder="{{ 'login.password' | translate }}" required
+                        formControlName="password" [ngClass]="{
+                            'is-invalid':
+                              (loginForm.get('password')?.touched || loginForm.get('password')?.dirty) &&
+                              !loginForm.get('password')?.valid
+                          }" />
+                </div>
+            </div>
+            <div class="form-error" *ngIf="loginForm.get('password')?.errors?.required && loginForm.get('password')?.touched">
+                {{ 'login.no_password' | translate }}
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn btn-success" type="submit" style="width: 100%;" [disabled]="!loginForm.valid"> Login </button>
+                </div>
+            </div>
+        </form>
+        <br>
+        <div class="row" *ngIf="LoginAttempted === true && IsLoggedIn === false">
+            <div class="col-md-12 form-error">
+                {{ 'login.invalid_credentials' | translate }}
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

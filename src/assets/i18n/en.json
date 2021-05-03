@@ -1,0 +1,78 @@
+{
+    "header": {
+        "welcome": "Welcome",
+        "products": "Products",
+        "login": "Login"
+    },
+    "footer": {
+        "copyright": "Copyright",
+        "tagline": "Here Shopping begins"
+    },
+    "login": {
+        "username": "Username",
+        "password": "Password",
+        "no_username": "Please enter your Username.",
+        "no_password": "Please enter Password.",
+        "invalid_credentials": "Invalid Credentials, Please try again."
+    },
+    "products": {
+        "select_category": "Select Category",
+        "category_electronics": "Electronics",
+        "category_kitchen": "Kitchen",
+        "category_kids": "Kids",
+        "search_placeholder": "Enter Search Query",
+        "search_button": "Search"
+    },
+    "cart": {
+        "product": "Product",
+        "quantity": "Quantity",
+        "price": "Price",
+        "total_cart_value": "Total Cart value",
+        "checkout": "Checkout",
+        "clear_cart": "Clear Cart"
+    },
+    "checkout": {
+        "pre_checkout": {
+            "pre": "Please enter the below details. Your order will be delivered in",
+            "days": "7 to 14 working days."
+        },
+        "post_checkout": {
+            "pre": "Your order has been placed successfully. Kindly wait for",
+            "days": "7 to 14 working days.",
+            "contact": "If you have any queries please contact us at 1800 123 4567.",
+            "continue": "You can continue shopping",
+            "here": "here"
+        },
+        "form": {
+            "placeholders": {
+                "name": "Enter Your Name",
+                "shipping_address": "Enter Your Shipping Address",
+                "pincode": "Enter Your Pin Code",
+                "mobile_number": "Enter Your Mobile Number",
+                "email": "Enter Your Email"
+            },
+            "validations": {
+                "name": {
+                    "required": "Please enter your Name.",
+                    "length": "Name should be at least 6 characters long."
+                },
+                "shipping_address": {
+                    "required": "Please enter your Shipping Address.",
+                    "length": "Shipping Address should be at least 10 characters long."
+                },
+                "pincode": {
+                    "required": "Please enter your area Pin Code.",
+                    "length": "Pin Code should be of 6 Digits."
+                },
+                "mobile_number": {
+                    "required": "Please enter your Mobile Number.",
+                    "length": "Mobile Number should be 10 Digits long."
+                },
+                "email": {
+                    "required": "Please enter your Email.",
+                    "pattern": "Please enter a valid email id."
+                }
+            }
+        }
+    }
+}

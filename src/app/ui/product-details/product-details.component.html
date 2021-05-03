@@ -1,0 +1,24 @@
+<app-header></app-header>
+<br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-3">
+                    <img height="250px" src="{{Product?.image}}">
+                </div>
+                <div class="col-md-9">
+                    <h4>{{Product?.name}}</h4>
+                    <div [innerHTML]="Product?.description"></div>
+                    <div><b>Category :</b> {{Product?.category}}</div>
+                    <div><b>Price :</b> {{Product?.price | currency: 'INR'}} </div>
+                    <div><button class="btn btn-success" (click)="saveCart(Product?.id)">Add To Cart</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+<br>
+<app-footer></app-footer>
