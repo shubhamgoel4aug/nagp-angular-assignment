@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
     if(this.IsLoggedIn) {
       localStorage.setItem("UserName", this.loginForm.get('userName')?.value);
       localStorage.setItem("IsLoggedIn", "True");
-      this.router.navigateByUrl("products");
+      window.location.href = "products";
     }
     else {
       localStorage.setItem("UserName", this.loginForm.get('userName')?.value);

@@ -21,12 +21,16 @@
         "category_kitchen": "Kitchen",
         "category_kids": "Kids",
         "search_placeholder": "Enter Search Query",
-        "search_button": "Search"
+        "search_button": "Search",
+        "specifications": "Specifications",
+        "price": "Price",
+        "category": "Category"
     },
     "cart": {
         "product": "Product",
         "quantity": "Quantity",
         "price": "Price",
+        "add_to_cart": "Add To cart",
         "total_cart_value": "Total Cart value",
         "checkout": "Checkout",
         "clear_cart": "Clear Cart"

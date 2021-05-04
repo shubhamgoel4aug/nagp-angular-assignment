@@ -21,12 +21,16 @@
         "category_kitchen": "Küche",
         "category_kids": "Kinder",
         "search_placeholder": "Suchabfrage Eingeben",
-        "search_button": "Súche"
+        "search_button": "Súche",
+        "specifications": "Spezifikationen",
+        "price": "Preís",
+        "category": "Kategorie"
     },
     "cart": {
         "product": "Prodúkt",
         "quantity": "Ménge",
         "price": "Preís",
+        "add_to_cart": "In den Warenkorb legen",
         "total_cart_value": "Gesamtwert des Warenkorbs",
         "checkout": "Auschecken",
         "clear_cart": "Warenkorb löschen" 

@@ -25,6 +25,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.IsLoggedIn = localStorage.getItem("IsLoggedIn")?.toString() == "True" ? true : false;
+    console.log(this.IsLoggedIn);
     this.UserName = localStorage.getItem("UserName")?.toString();
     let cc = localStorage.getItem("cart")?.trim().split(",").length;
     if(cc != undefined)

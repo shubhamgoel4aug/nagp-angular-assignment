@@ -1,4 +1,3 @@
-<app-header></app-header>
 <br>
 <div class="container-fluid">
     <div class="row">
@@ -6,7 +5,7 @@
         <div class="col-md-8">
             <form novalidate (ngSubmit)="search()" [formGroup]="SearchForm">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <select class="form-control" formControlName="category" (change)="onCategoryChange()">
                             <option value="Select Category" selected>{{'products.select_category' | translate}}</option>
                             <option value="Electronics">{{'products.category_electronics' | translate}}</option>
@@ -14,13 +13,11 @@
                             <option value="Kids">{{'products.category_kids' | translate}}</option>
                         </select>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                         <input type="text" class="form-control" placeholder="{{ 'products.search_placeholder' | translate }}"
                             formControlName="query" />
                     </div>
-                    <div class="col-md-2"><button class="btn btn-success" type="submit" style="width: 100%;" [disabled]="!SearchForm.valid"> {{ 'products.search_button' | translate }} </button></div>
-                    <div class="com-md-3"></div>
-
+                    <div class="col-md-3"><button class="btn btn-success" type="submit" style="width: 100%;" [disabled]="!SearchForm.valid"> {{ 'products.search_button' | translate }} </button></div>
                 </div>
             </form>
             <div class="row" *ngFor="let item of [].constructor(TotalProductRows); let i = index">
@@ -36,5 +33,3 @@
     </div>
 </div>
 <br>
-<app-footer></app-footer>
-<router-outlet></router-outlet>

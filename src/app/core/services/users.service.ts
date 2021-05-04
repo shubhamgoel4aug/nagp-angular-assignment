@@ -17,18 +17,10 @@ export class UsersService {
     return this.Users;
   }
 
-  getUser(id: number): User {
-    return this.Users.filter(x => x.id === id)[0];
-  }
-
   login(userName: String, password: String): boolean {
     if(this.getUsers().filter(x => x.userName === userName && x.password === password).length === 1)
       return true;
     else
       return false;
-  }
-
-  logout() {
-
   }
 }

@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Samsung Galaxy S20 FE",
         "category": "Electronics",
-        "description": "<b> Specifications </b> <br> <b> RAM </b> : 8GB <br> <b> Storage </b> : 128GB <br> <b> Camera </b> : 12MP (wide), 8MP (telephoto), 12MP (Ultrawide), 32MP (Front)",
+        "description": "<b> RAM </b> : 8GB <br> <b> Storage </b> : 128GB <br> <b> Camera </b> : 12MP (wide), 8MP (telephoto), 12MP (Ultrawide), 32MP (Front)",
         "price": "42000",
         "image": "assets/data/images/samsung_galaxy_s20_fe.jpg"
     },
@@ -11,7 +11,7 @@
         "id": 2,
         "name": "Google Pixel 5",
         "category": "Electronics",
-        "description": "<b> Specifications </b> <br> <b> RAM </b> : 8GB <br> <b> Storage </b> : 128GB <br> <b> Camera </b> : 12.2MP (wide), 16MP (Ultrawide), 8 MP (Front)",
+        "description": "<b> RAM </b> : 8GB <br> <b> Storage </b> : 128GB <br> <b> Camera </b> : 12.2MP (wide), 16MP (Ultrawide), 8 MP (Front)",
         "price": "73350",
         "image": "assets/data/images/google_pixel_5.jpg"
     },
@@ -19,7 +19,7 @@
         "id": 3,
         "name": "Apple AirPods with Wireless Charging Case",
         "category": "Electronics",
-        "description": "<b> Specifications </b> <br> More than 24 hours listening time, up to 18 hours talk time; AirPods (single charge): Up to 5 hours listening time, up to 3 hours talk time or 15 minutes in the case equals up to 3 hours listening time or up to 2 hours talk time",
+        "description": "More than 24 hours listening time, up to 18 hours talk time; AirPods (single charge): Up to 5 hours listening time, up to 3 hours talk time or 15 minutes in the case equals up to 3 hours listening time or up to 2 hours talk time",
         "price": "15990",
         "image": "assets/data/images/apple_airpods.jpg"
     },
@@ -27,7 +27,7 @@
         "id": 4,
         "name": "Inalsa Food Processor",
         "category": "Kitchen",
-        "description": "<b> Specifications </b> <br> <b> Power </b> : 650 Watt <br> <b> Warranty </b> : 5 Year on Motor <br> <b> Highlights </b> : Break Resistant Processing Bowl, Blender, Dry Grinding Jar, 8 Accessories, Centrifugal Juicer",
+        "description": "<b> Power </b> : 650 Watt <br> <b> Warranty </b> : 5 Year on Motor <br> <b> Highlights </b> : Break Resistant Processing Bowl, Blender, Dry Grinding Jar, 8 Accessories, Centrifugal Juicer",
         "price": "4895",
         "image": "assets/data/images/inalsa_food_processor.jpg"
     },
@@ -35,7 +35,7 @@
         "id": 5,
         "name": "Faber Kitchen Chimney",
         "category": "Kitchen",
-        "description": "<b> Specifications </b> <br> <b> Length </b> : 60 cm <br> <b> Warranty </b> : 1 Year on Product, 5 Uear on Product <br> <b> Suction </b> : 1350 m<sup>2</sup> <br> <b> Highlights </b> : 3 speed motion sensor touch control; auto clean: heat auto clean; phase: single-phase; power requirement: 250; engine power: 180",
+        "description": "<b> Length </b> : 60 cm <br> <b> Warranty </b> : 1 Year on Product, 5 Uear on Product <br> <b> Suction </b> : 1350 m<sup>2</sup> <br> <b> Highlights </b> : 3 speed motion sensor touch control; auto clean: heat auto clean; phase: single-phase; power requirement: 250; engine power: 180",
         "price": "21490",
         "image": "assets/data/images/faber_kitchen_chimney.jpg"
     },
@@ -43,7 +43,7 @@
         "id": 6,
         "name": "Ludo + Chess Combo",
         "category": "Kids",
-        "description": "<b> Specifications </b> <br> <b> In The box </b> : 1 Ludo with Snakes & ladders + 1 Chess Set ",
+        "description": "<b> In The box </b> : 1 Ludo with Snakes & ladders + 1 Chess Set ",
         "price": "250",
         "image": "assets/data/images/ludo_chess_combo.jpg"
     },
@@ -51,7 +51,7 @@
         "id": 7,
         "name": "Clay Set",
         "category": "Kids",
-        "description": "<b> Specifications </b> <br> <b> Color </b> : Yellow <br> <b> Highlights </b> : Includes vending machine, 5 tubs of clay, stencils, tools, and other material to help make ice cream sets. 100% safe and non-toxic clay",
+        "description": "<b> Color </b> : Yellow <br> <b> Highlights </b> : Includes vending machine, 5 tubs of clay, stencils, tools, and other material to help make ice cream sets. 100% safe and non-toxic clay",
         "price": "42000",
         "image": "assets/data/images/clay_set.jpg"
     }

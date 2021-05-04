@@ -1,19 +1,19 @@
-<app-header></app-header>
 <br>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-2"></div>
-        <div class="col-md-8">
+        <div class="col-md-8 product-details">
             <div class="row">
                 <div class="col-md-3">
                     <img height="250px" src="{{Product?.image}}">
                 </div>
                 <div class="col-md-9">
-                    <h4>{{Product?.name}}</h4>
-                    <div [innerHTML]="Product?.description"></div>
-                    <div><b>Category :</b> {{Product?.category}}</div>
-                    <div><b>Price :</b> {{Product?.price | currency: 'INR'}} </div>
-                    <div><button class="btn btn-success" (click)="saveCart(Product?.id)">Add To Cart</button></div>
+                    <h4>{{Product?.name}}</h4> <br>
+                    <div><b>{{ 'products.specifications' | translate }}</b></div>
+                    <div [innerHTML]="Product?.description"></div> <br>
+                    <div><b>{{ 'products.category' | translate }} :</b> {{Product?.category}}</div>
+                    <div><b>{{ 'products.price' | translate }} :</b> {{Product?.price | currency: 'INR'}} </div>
+                    <div><button class="btn btn-success" (click)="saveCart(Product?.id)">{{ 'cart.add_to_cart' | translate }}</button></div>
                 </div>
             </div>
         </div>
@@ -21,4 +21,3 @@
     </div>
 </div>
 <br>
-<app-footer></app-footer>

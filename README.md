@@ -1,27 +1,21 @@
-# Shoptrox
+# ShopTrox
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
+## Github Link
+https://github.com/shubhamgoel4aug/nagp-angular-assignment 
 
-## Development server
+## Link of Deployed Code
+https://heuristic-jackson-7acaa9.netlify.app/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Tested Components
+HeaderComponent (src/app/shared/header/header.component.spec.ts)  
+FooterComponent (src/app/shared/footer/footer.component.spec.ts) 
 
-## Code scaffolding
+## Tested Service
+UserService (src/app/core/services/user.service.spec.ts) 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Bonus Areas
+### Category Tree
+I have implemented Category drop-down which can filter down the products (It is not in the form of tree).  
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Translation
+I have implemented German translation. The application can be translated by choosing the dropdown at the top. The product details are not translated but all other controls are translated.
