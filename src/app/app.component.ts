@@ -16,12 +16,13 @@ export class AppComponent {
   constructor(private router: Router, public translate: TranslateService, private languageService: LanguageService){
     translate.addLangs(['en', 'de']);
     translate.setDefaultLang('en');
-    translate.use('en');
     let l = localStorage.getItem("language");
     if(l != null || l != undefined)
       translate.use(l);
-    else
+    else {
+      translate.use('en');
       localStorage.setItem("language", 'en');
+    }
     this.subscriptionName = this.languageService.getLanguage().subscribe(x => {
       translate.use(x.language);
       localStorage.setItem("language", x.language);

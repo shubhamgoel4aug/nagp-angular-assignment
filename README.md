@@ -6,6 +6,11 @@ https://github.com/shubhamgoel4aug/nagp-angular-assignment
 ## Link of Deployed Code
 https://heuristic-jackson-7acaa9.netlify.app/
 
+## Login Credentials
+Username: Hero  
+Password: xyz#9876  
+Note: Credentials are case-sensitive
+
 ## Tested Components
 HeaderComponent (src/app/shared/header/header.component.spec.ts)  
 FooterComponent (src/app/shared/footer/footer.component.spec.ts) 
