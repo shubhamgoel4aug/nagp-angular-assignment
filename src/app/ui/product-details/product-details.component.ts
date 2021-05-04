@@ -23,7 +23,6 @@ export class ProductDetailsComponent implements OnInit {
       });
       if(this.Product === undefined)
         window.location.href = "products";
-      console.log(this.Product);
     });
   }
 

@@ -25,7 +25,6 @@ export class CartComponent implements OnInit {
     this.CartValue = 0;
     this.activatedRoute.data.subscribe(products => {
       let cart = this.cartService.getCart()?.trim().split(",");
-      console.log(cart);
       cart?.forEach(x => {
         let id = parseInt(x);
         if(this.ProductMap.has(id) && this.ProductMap) {
@@ -45,7 +44,6 @@ export class CartComponent implements OnInit {
             this.CartValue += _pm * element.price;
         }
       });
-      console.log(this.CartValue);
 
     });
   }
