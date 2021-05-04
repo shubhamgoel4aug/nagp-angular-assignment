@@ -19,3 +19,6 @@ I have implemented Category drop-down which can filter down the products (It is 
 
 ### Translation
 I have implemented German translation. The application can be translated by choosing the dropdown at the top. The product details are not translated but all other controls are translated.
+
+## CSS Library
+Bootstrap 4
