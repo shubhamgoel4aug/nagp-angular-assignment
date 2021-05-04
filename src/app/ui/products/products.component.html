@@ -5,7 +5,7 @@
         <div class="col-md-8">
             <form novalidate (ngSubmit)="search()" [formGroup]="SearchForm">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4" style="margin-bottom: 10px;">
                         <select class="form-control" formControlName="category" (change)="onCategoryChange()">
                             <option value="Select Category" selected>{{'products.select_category' | translate}}</option>
                             <option value="Electronics">{{'products.category_electronics' | translate}}</option>
@@ -13,7 +13,7 @@
                             <option value="Kids">{{'products.category_kids' | translate}}</option>
                         </select>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5" style="margin-bottom: 10px;">
                         <input type="text" class="form-control" placeholder="{{ 'products.search_placeholder' | translate }}"
                             formControlName="query" />
                     </div>
